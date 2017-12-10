@@ -3,7 +3,7 @@
 =======================================
 
 ## About:
-Cake Manager Micro Service (fictitious) implementation for microservice
+Cake Manager rstfull service implementation using (springboot + thymeleaf + spring data jpa + spring resttemplate)
 
 Requirements:
 
