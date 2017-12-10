@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <head>
+        <title th:text="#{app.title}"/>
+        <link rel="stylesheet" th:href="@{/css/styles.css}"/>
+    </head>
+</head>
+<body>
+<h1 align="center" th:text="#{app.cake-details}"/>
+<table align="center">
+    <tr>
+        <th th:text="#{title}"/>
+        <th th:text="#{description}"/>
+        <th th:text="#{image}"/>
+    </tr>
+    <tr th:each="cake : ${cakes}">
+        <td th:text="${cake.title}"/>
+        <td th:text="${cake.description}"/>
+        <td><img th:src="${{cake.image}}" width="80" height="40"/></td>
+    </tr>
+</table>
+
+<hr color="blue"/>
+<h2 align="center">Add Cake</h2>
+
+<div th:if="${error}" bgcolor="red">
+    <span th:if="${error}" th:text="${error}" style="font:red; align:center"/>
+</div>
+
+<form method="post">
+    <table align="center">
+        <tr>
+            <td><label th:text="#{title}"/></td>
+            <td><input type="text" name="title" maxlength="100" size="50"/></td>
+        </tr>
+        <tr>
+            <td><label th:text="#{description}"/></td>
+            <td><input type="text" name="description" maxlength="100" size="50"/></td>
+        </tr>
+        <tr>
+            <td><label th:text="#{image}"/></td>
+            <td><input th:type="text" name="image" maxlength="300" size="50"/></td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2"><input type="submit" th:value="#{button.addcake}"/></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

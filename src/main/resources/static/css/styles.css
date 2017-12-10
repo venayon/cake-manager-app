@@ -1,0 +1,16 @@
+table {
+    border-collapse: collapse;
+    align:center;
+    bgcolor: green;
+}
+
+table, th, td {
+    align:center;
+    border: 1px solid black;
+}
+
+.error{
+    align:center;
+    color: red;
+    font-size: 15px;
+}
