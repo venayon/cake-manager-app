@@ -1,5 +1,6 @@
 package com.waracle.cakemanager;
 
+import com.waracle.cakemanager.ext.ExtClientJson;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

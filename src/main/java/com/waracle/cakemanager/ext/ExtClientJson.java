@@ -1,4 +1,4 @@
-package com.waracle.cakemanager;
+package com.waracle.cakemanager.ext;
 
 import com.waracle.cakemanager.entity.CakeEntity;
 import org.slf4j.Logger;

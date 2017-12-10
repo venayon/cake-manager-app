@@ -1,6 +1,6 @@
 package com.waracle.cakemanager.controller;
 
-import com.waracle.cakemanager.CakeRepository;
+import com.waracle.cakemanager.dao.CakeRepository;
 import com.waracle.cakemanager.entity.CakeEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

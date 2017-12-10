@@ -1,4 +1,4 @@
-package com.waracle.cakemanager;
+package com.waracle.cakemanager.dao;
 
 import com.waracle.cakemanager.entity.CakeEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
